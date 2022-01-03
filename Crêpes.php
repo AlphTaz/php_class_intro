@@ -39,15 +39,15 @@ public function __construct (
         echo $this->rhum."cl de rhum.\n";
         echo $this->topping."topping.\n";
 
-
-
 }
 
-public function getRhum (): int 
-{
-return $this->rhum;
+public function getRhum () {
+    return $this->rhum;
 }
 
+public function setRhum () {
+
+}
 
 }
 
