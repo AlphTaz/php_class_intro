@@ -50,6 +50,7 @@ public function setTopping ($y) {
 }
 
 public function addTopping ($z) {
+    $z= strtolower($z);
 array_push($this->topping, $z);
 
 }
@@ -59,9 +60,10 @@ public function removeTopping ($a) {
     if (($i = array_search($value, $this->topping)) !== false) {
         unset($this->topping[$i]);
     }
-    echo "Element supprimé";
+    echo "L'élement suivant a été correctement supprimé :" . $value;
     var_dump($this->topping);
 }
+
 
 }
 
