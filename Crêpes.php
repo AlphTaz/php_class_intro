@@ -6,7 +6,7 @@ class Crepes {
     public $beurre ;
     public $farine;
     private $rhum;
-    private $topping; 
+    private $topping = []; 
 
 
 public function __construct (
@@ -41,12 +41,26 @@ public function __construct (
 
 }
 
-public function getRhum () {
-    return $this->rhum;
+public function getTopping () {
+    return $this->topping;
 }
 
-public function setRhum () {
+public function setTopping ($y) {
+    $this->topping =$y;
+}
 
+public function addTopping ($z) {
+array_push($this->topping, $z);
+
+}
+
+public function removeTopping ($a) {
+    $value = $a;
+    if (($i = array_search($value, $this->topping)) !== false) {
+        unset($this->topping[$i]);
+    }
+    echo "Element supprimé";
+    var_dump($this->topping);
 }
 
 }
