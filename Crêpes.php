@@ -5,7 +5,7 @@ class Crepes {
     public $lait ;
     public $beurre ;
     public $farine;
-    public $rhum;
+    private $rhum;
     private $topping; 
 
 
@@ -40,7 +40,15 @@ public function __construct (
         echo $this->topping."topping.\n";
 
 
+
 }
+
+public function getRhum (): int 
+{
+return $this->rhum;
+}
+
+
 }
 
 ?> 
