@@ -6,7 +6,7 @@ class Crepes {
     public $beurre ;
     public $farine;
     public $rhum;
-    public $topping; 
+    private $topping; 
 
 
 public function __construct (
@@ -33,10 +33,10 @@ public function __construct (
     public function afficher_recette () {
         echo "Pour ma recette de crêpes, il me faut: \n"; 
         echo $this->oeufs."oeufs.\n";
-        echo $this->lait."lait.\n";
-        echo $this->beurre."beurre.\n";
-        echo $this->farine."farine.\n";
-        echo $this->rhum."rhum.\n";
+        echo $this->lait."cl de lait.\n";
+        echo $this->beurre."grammes de beurre.\n";
+        echo $this->farine."grammes de farine.\n";
+        echo $this->rhum."cl de rhum.\n";
         echo $this->topping."topping.\n";
 
 
